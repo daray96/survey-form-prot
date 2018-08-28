@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilosSurvey.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="fondo">
+            <h1 id="title" class="title">Social Network<br>Survey</h1>
+        </div>
+
+    </header>
+
+
+    <div class="container">
+        <p class="description" id="description">Please, fill the data and answer the questions below:</p>
+
+        <form action="" class="survey-form">
+
+            <div class="fila name">
+
+                <div class="col question">
+                    <label for="name" id="name-label" class="name-label">Name</label>
+                </div>
+
+                <div class="col answer">
+                    <input type="text" id="name" class="nombre" required placeholder="Enter your name">
+                </div>
+
+            </div>
+
+            <div class="fila email">
+
+                <div class="col question">
+                    <label for="email" id="email-label" class="email-label">E-mail</label>
+                </div>
+
+                <div class="col answer">
+                    <input type="email" class="correo" id="email" required placeholder="Enter your e-mail">
+                </div>
+
+            </div>
+
+            <div class="fila number">
+
+                <div class="col question">
+                    <label for="number" id="number-label" class="number-label">Age</label>
+                </div>
+
+                <div class="col answer">
+                    <input type="number" class="numero" id="number" required min="1" max="122" placeholder="Enter your age">
+                </div>
+            </div>
+
+            <div class="fila ">
+                <div class="col question">
+                    <label for="">Which of the following social networking websites do you currently have an account with? (Check all that apply)</label>
+                </div>
+                <div class="col answer">
+                    <div class="check">
+                        <input type="checkbox" value="Option1" id="cbox1" class="checkbox"><label for="cbox1" class="checkbox-label">Facebook</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" value="Option2" id="cbox2" class="checkbox"><label for="cbox2" class="checkbox-label">Twitter</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" value="Option3" id="cbox3" class="checkbox"><label for="cbox3" class="checkbox-label">Instagram</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" value="Option4" id="cbox4" class="checkbox"><label for="cbox4" class="checkbox-label">Google+</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" value="Option5" id="cbox5" class="checkbox"><label for="cbox5" class="checkbox-label">Other</label>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="fila">
+
+                <div class="col question">
+                    <label for="dropdown">About how many "friends" do you have on social networking websites?</label>
+                </div>
+
+                <div class="col answer">
+                    <select name="" id="dropdown" class="dropdown">
+                        <option value="Option 1">Less than 100</option>
+                        <option value="Option 2">More than 100 and less than 1000</option>
+                        <option value="Option 3">More than 1000</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="fila">
+                <div class="col question">
+                    <label for="">About how many of your "friends" in social networking sites have you met in person?</label>
+                </div>
+
+                <div class="col answer">
+                    <div class="radiocol">
+                        <input type="radio" name="frequency" value="option 1" id="radio1" class="radio"><label for="radio1" class="radio-label">All of them</label>
+                    </div>
+                    <div class="radiocol">
+                        <input type="radio" name="frequency" value="option 2" id="radio2" class="radio"><label for="radio2" class="radio-label">Most of them</label>
+                    </div>
+                    <div class="radiocol">
+                        <input type="radio" name="frequency" value="option 3" id="radio3" class="radio"><label for="radio3" class="radio-label">About half of them</label>
+                    </div>
+                    <div class="radiocol">
+                        <input type="radio" name="frequency" value="option 3" id="radio4" class="radio"><label for="radio4" class="radio-label">A few of them</label>
+                    </div>
+                    <div class="radiocol">
+                        <input type="radio" name="frequency" value="option 3" id="radio5" class="radio"><label for="radio5" class="radio-label">None of them</label>
+                    </div>
+
+ 
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="col question">
+                    <label for="textarea">Any comments or suggestions?</label>
+                </div>
+                <div class="col answer">
+                    <textarea name="" id="textarea" cols="30" rows="10" placeholder="Enter your comments here..."></textarea>
+                </div>
+
+            </div>
+
+            <div class="fila boton">
+                <button id="submit" class="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    
+    <footer>
+        &#169; 2018 David Aray 
+    </footer>
+    
+</body>
+
+</html>
