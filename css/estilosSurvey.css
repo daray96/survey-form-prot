@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    background: #DEDEDE;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+header .fondo {
+    width: 100%;
+    height: 298px;
+    display: block;
+    background-image: url(https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+}
+
+header .fondo h1 {
+    position: absolute;
+    display: inline;
+    background: transparent;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 58px;
+    color: white;
+    top: 30px;
+    text-shadow: 2px 0 0 #707070, -2px 0 0 #707070, 0 2px 0 #707070, 0 -2px 0 #707070, 1px 1px #707070, -1px -1px 0 #707070, 1px -1px 0 #707070, -1px 1px 0 #707070;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.container {
+    background: white;
+    max-width: 800px;
+    height: 900px;
+    overflow: visible;
+    z-index: 3;
+    position: relative;
+    top: -90px;
+    margin: auto;
+    border-top-style: solid;
+    border-top-color: #707070;
+    border-top-width: 9px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ;
+}
+
+.description {
+    font-family: 'Roboto', 'sans-serif';
+    color: #707070;
+    font-size: 26px;
+    font-style: italic;
+    margin: auto;
+    margin-left: 6px;
+    margin-bottom: 30px;
+    background: none;
+    display: flex;
+}
+
+label {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.fila {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col {
+    width: 50%;
+}
+
+.question {
+    text-align: right;
+}
+
+.answer {
+    margin-left: 10px;
+}
+
+.nombre {
+    width: 70%;
+    height: 21px;
+}
+
+.correo {
+    width: 70%;
+    height: 21px;
+}
+
+.numero {
+    width: 30%;
+    height: 21px;
+}
+
+.check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.checkbox {
+    width: auto;
+    height: 21px;
+}
+
+.checkbox-label {
+    text-align: left;
+}
+
+.dropdown {
+    width: 70%;
+    height: 21px;
+}
+
+.radiocol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.radio {
+    width: auto;
+    height: 21px;
+}
+
+.radio-label {}
+
+textarea {
+    resize: none;
+    width: 70%;
+}
+
+.submit {
+    width: 30%;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+footer {
+    font-family: 'Roboto', 'sans-serif';
+    text-align: center;
+    top: -40px;
+    position: relative;
+    font-weight: bold;
+    color: #707070;
+}
+
+/*Media Queries*/
+
+@media only screen and (max-width:500px) {
+
+    header .fondo h1 {
+        font-size: 44px;
+    }
+
+    .container {
+        margin-top: 10px;
+        width: 85%;
+        height: 1240px;
+    }
+
+    .fila {
+        flex-direction: column;
+    }
+
+    .question {
+        text-align: justify;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        width: 90%;
+    }
+
+    .answer {
+        width: 100%
+    }
+
+    .numero {
+        width: 50%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .submit {
+        width: 75%;
+        height: 30px;
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    .container {
+        height: 1320px;
+    }
+
+}
